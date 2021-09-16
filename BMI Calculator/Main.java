@@ -70,20 +70,20 @@ public class Main {
                     System.out.println("\nChosen: Kilograms and Meters");
 
                     System.out.print("Enter the weight(kg): ");
-                    weight = scanner.nextFloat();
+                    weight = scanner.nextDouble();
 
                     System.out.print("Enter the height(m): ");
-                    height = scanner.nextFloat();
+                    height = scanner.nextDouble();
 
                     // validation for negatives
                     if (weight < 0 || height < 0){
                         System.out.println("Invalid input. Try again!\n");
 
                         System.out.print("Enter the weight(kg): ");
-                        weight = scanner.nextFloat();
+                        weight = scanner.nextDouble();
 
                         System.out.print("Enter the height(m): ");
-                        height = scanner.nextFloat();
+                        height = scanner.nextDouble();
                     }
                     BMI = weight / Math.pow(height, 2); // calculating the BMI
                 }
@@ -92,20 +92,20 @@ public class Main {
                     System.out.println("\nChosen: Pounds and Inches\n");
 
                     System.out.print("Enter the weight(lb): ");
-                    weight = scanner.nextFloat();
+                    weight = scanner.nextDouble();
 
                     System.out.print("Enter the height(in): ");
-                    height = scanner.nextFloat();
+                    height = scanner.nextDouble();
 
                     // validation for negatives
                     if (weight < 0 || height < 0){
                         System.out.println("Invalid input. Try again!\n");
 
                         System.out.print("Enter the weight(kg): ");
-                        weight = scanner.nextFloat();
+                        weight = scanner.nextDouble();
 
                         System.out.print("Enter the height(m): ");
-                        height = scanner.nextFloat();
+                        height = scanner.nextDouble();
                     }
                     BMI = (weight / Math.pow(height, 2)) * CONVERSION_FACTOR; // calculating the BMI
                 }
