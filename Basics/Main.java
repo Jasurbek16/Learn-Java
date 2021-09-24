@@ -236,3 +236,81 @@ Project: Mortgage Calculator
 
 }
 
+
+
+////////////////////////////
+/**
+ Jasurbek Mamurov
+ U2010164
+ Assignment #2
+ Creating a Student class
+**/
+
+package com.company;
+
+import java.util.Scanner;
+
+class Student {
+
+    // data fields
+    private int StudentID;
+    private String StudentName;
+    private int Age;
+
+    Student(){
+        this.StudentID = 12345678;
+        this.StudentName = "Tony";
+        this.Age = 10;
+    }
+
+    Student(int StudentID, String StudentName, int Age){
+        this.StudentID = StudentID;
+        this.StudentName = StudentName;
+        this.Age = Age;
+    }
+
+    // Getting the studentID
+    public int getStudentID() {
+        return StudentID;
+    }
+
+    // Setting the studentID
+    public void setStudentID(int StudentID) {
+        while(StudentID < 0){
+            System.out.println("Invalid input, please try again...");
+
+        }
+    }
+
+    // Getting the studentName
+    public String getStudentName() {
+        return StudentName;
+    }
+
+    // Setting the studentName
+    public void setStudentName(String StudentName) {
+        this.StudentName = StudentName;
+    }
+
+    // Getting the age
+    public int getAge(){
+        return Age;
+    }
+
+    // Setting the age
+    public void setAge(int Age){
+        this.Age = Age;
+    }
+
+
+}
+
+public class StudentDemo {
+
+
+    public static void main(String[] args) {
+
+    }
+}
+
+
