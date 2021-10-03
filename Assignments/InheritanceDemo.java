@@ -1,3 +1,9 @@
+/*
+U2010164
+Jasurbek Mamurov
+Assignemt #3
+Inheritance and Polymorphism
+*/
 public class InheritanceDemo {
 
     public static void main(String[] args) {
