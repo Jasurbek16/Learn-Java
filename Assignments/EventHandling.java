@@ -5,7 +5,6 @@ Assignment #6
 Event Handling 
 */
 
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -84,6 +83,11 @@ public class EventHandling extends JFrame implements ActionListener, ItemListene
         sol.addActionListener(this);
         sol.addItemListener(this);
 
+	// adding listeners for the text-field
+	name.addActionListener(this);
+        email.addActionListener(this);
+        password.addActionListener(this);
+	
         // main panel manipulation
         p1.setBorder(new TitledBorder("Registration"));
         // setting a font
@@ -124,6 +128,13 @@ public class EventHandling extends JFrame implements ActionListener, ItemListene
         // combo-box
         else if(ae.getSource() == lang_choice)
             System.out.println("Language combo-box is clicked\n-----");
+	else if(ae.getSource() == name)
+	// text-fields
+	    System.out.println("-----\nName field worked\n-----");
+	else if(ae.getSource() == email)
+	    System.out.println("-----\nEmail field worked\n-----");
+	else if(ae.getSource() == password)
+	    System.out.println("-----\nPassword field worked\n-----");
     }
 
     // event handling method for ItemEvent s
